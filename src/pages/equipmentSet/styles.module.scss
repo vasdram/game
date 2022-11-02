@@ -1,0 +1,24 @@
+@import '~@src/assets/styles';
+
+.installButtonWrapper {
+  padding-top: 37px;
+
+  @media only screen and (min-width: $media-desktop-s)  {
+    padding-top: 72px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  justify-content: center;
+}
+
+.cardWrapper {
+  text-align: center;
+}
+
+.characteristics {
+  padding-top: 88px;
+}

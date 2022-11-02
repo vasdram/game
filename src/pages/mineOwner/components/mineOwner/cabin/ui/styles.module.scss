@@ -1,0 +1,45 @@
+@import '~@src/assets/styles';
+
+.cabinWrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: cover;
+  background-image: url('~@src/ui/images/mineowner/mine-owner-cabin-default.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-cyan-cyan-3;
+}
+
+.cabinDefaultInside {
+  background-image: url('~@src/ui/images/mineowner/mine-owner-cabin-default-light.webp');
+}
+
+.incident {
+  background-image: url('~@src/ui/images/mineowner/mine-owner-cabin-incident.webp');
+}
+
+.panel {
+    height: 34vh;
+    background: url('~@src/ui/images/mineowner/panel.webp') no-repeat bottom;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    cursor: pointer;
+
+    &:hover {
+      filter: $glow;
+    }
+
+    @media (min-width: $media-desktop-s) {
+      left: 20vh;
+      right: 20vh;
+    }
+}
+
+.progress {
+  background: url('~@src/ui/images/mineowner/mine-owner-cabin-progress.webp') no-repeat bottom center;
+  background-size: cover;
+}

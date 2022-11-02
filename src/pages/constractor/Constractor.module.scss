@@ -1,0 +1,75 @@
+@import '~@src/assets/styles';
+
+.cabinBackground {
+  font-family: $bai;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $color-extra-background-3 url("~@src/ui/images/contractor/dark-gray.webp") no-repeat fixed right center;
+  background-size: cover;
+
+  &DarkRed {
+    background: url("~@src/ui/images/contractor/dark-red.webp") no-repeat right center fixed;
+    background-size: cover;
+  }
+
+  &LightGreen {
+    background: url("~@src/ui/images/contractor/light-green.webp") no-repeat right center fixed;
+    background-size: cover;
+  }
+
+  &LightRed {
+    background: url("~@src/ui/images/contractor/light-red.webp") no-repeat right center fixed;
+    background-size: cover;
+  }
+
+  &LightYellow {
+    background: url("~@src/ui/images/contractor/light-yellow.webp") no-repeat right center fixed;
+    background-size: cover;
+  }
+
+  @media only screen and (min-width: $media-desktop-s) {
+    position: relative;
+    min-height: 100vh;
+  }
+}
+
+.cabinMonitorContainerHeight {
+  width: 71vh !important;
+  left: 15.3vh;
+}
+
+.cabinMonitorContainerWidth {
+  width: 71vh !important;
+  left: 8vw;
+}
+
+.title {
+  font-family: $orbitron;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: $color-neutral-neutral-9;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $media-desktop-s) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: $color-neutral-neutral-9;
+
+  @media only screen and (min-width: $media-desktop-s) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

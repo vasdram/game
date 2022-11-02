@@ -1,0 +1,78 @@
+@import '~@src/assets/styles';
+
+.hologramWrapper {
+    text-align: center;
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    background: url('../../ui/images/mineowner/glass.webp') no-repeat center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-size: cover;
+}
+
+.header {
+  z-index: 3;
+  position: relative;
+}
+
+.title {
+    font-family: $orbitron;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: $color-neutral-neutral-9;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: $media-desktop-s) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+.description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: $color-neutral-neutral-9;
+
+    @media only screen and (min-width: $media-desktop-s) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.hologram {
+    text-align: center;
+    color: $color-neutral-neutral-9;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    white-space: pre-line;
+    margin-top: 54vh;
+    max-width: 27vw;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: -10%;
+        right: -10%;
+        top: -10%;
+        bottom: -10%;
+        filter: blur(15px);
+        border-radius: 15px;
+        z-index: -1;
+        opacity: 0.25;
+    }
+
+    @media (min-width: $media-mobile-oriental)  {
+        font-size: 16px;
+    }
+}

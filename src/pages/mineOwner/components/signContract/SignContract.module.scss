@@ -1,0 +1,48 @@
+@import '~@src/assets/styles';
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  padding-top: 12px;
+
+  @media only screen and (min-width: $media-desktop-s) {
+    padding-top: 50px;
+  }
+}
+
+.description {
+  padding-top: 6px;
+  max-width: 320px;
+
+  @media only screen and (min-width: $media-desktop-s) {
+    padding-top: 19px;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+
+  @media only screen and (min-width: $media-desktop-s) {
+    padding-top: 28px;
+  }
+}
+
+.btn {
+  font-family: $bai;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $yellow;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid $yellow;
+  border-radius: 2px;
+}

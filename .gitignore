@@ -1,0 +1,12 @@
+dist/
+node_modules/
+.idea/
+.husky
+.vscode
+.DS_Store
+src/**/*.scss.d.ts
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*

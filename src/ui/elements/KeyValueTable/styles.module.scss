@@ -1,0 +1,40 @@
+@import '~@src/assets/styles';
+
+.wrapper {
+  background-color: $color-neutral-neutral-1;
+  border: 1px solid $color-neutral-neutral-4;
+  border-radius: 2px;
+  color: $color-neutral-neutral-9;
+}
+
+.unit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $color-neutral-neutral-4;
+  padding: 0;
+
+  @media (min-width: $media-mobile-oriental) {
+    padding: 16px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.transparent {
+  background: none;
+  border: none;
+  border-bottom: 1px solid $color-neutral-neutral-10;
+
+  & .unit {
+    border-bottom: 1px solid $color-neutral-neutral-10;
+  }
+}
+
+.unitColored {
+  .value {
+    color: $color-primary-primary-6;
+  }
+}

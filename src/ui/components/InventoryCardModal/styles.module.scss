@@ -1,0 +1,69 @@
+@import '~@src/assets/styles';
+
+.modal {
+  max-width: 100%;
+  width: auto !important;
+  background: $color-neutral-neutral-2 !important;
+  height: 100%;
+
+  @media only screen and (min-width: $media-desktop-s)  {
+    overflow: auto;
+    height: auto;
+  }
+}
+
+.container {
+  display: flex;
+  gap: 32px;
+  width: fit-content;
+}
+
+.infoContainer {
+  color: $color-neutral-neutral-8 !important;
+
+  @media only screen and (min-width: $media-desktop-s)  {
+    max-width: 512px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $orbitron;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 25px;
+  color: $color-neutral-neutral-8 !important;
+}
+
+.info {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.rightCol {
+  padding-left: 44px;
+}
+
+.button {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 30px;
+  border: 0;
+  padding-left: 44px;
+}
+
+.depreciationProgressBarWidth {
+  width: 105px;
+}

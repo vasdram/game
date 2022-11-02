@@ -1,0 +1,39 @@
+@import '~@src/assets/styles';
+
+.cardHolder {
+  cursor: pointer;
+  height: 264px;
+  width: 144px;
+  background: black;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  white-space: pre-line;
+  text-align: center;
+  margin-top: 25px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -6px;
+    right: 0;
+    content: '';
+    background: url("../../icons/border.svg") left no-repeat;
+    height: 265px;
+    width: 154px;
+  }
+}
+
+h5.title {
+  color: $color-neutral-neutral-10;
+}
+
+.icon {
+  font-size: 32px;
+  margin-bottom: 23px;
+}

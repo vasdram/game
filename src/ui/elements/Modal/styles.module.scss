@@ -1,0 +1,36 @@
+@import '~@src/assets/styles';
+
+.modal {
+  font-family: $bai;
+  padding: 0;
+}
+
+.wideOnMobile {
+  max-width: 100vh;
+  margin: 0;
+  top: 0;
+
+  @media only screen and (min-width: $media-desktop-s)  {
+    max-width: calc(100vw - 32px);
+    padding: 0 0 24px;
+    top: 100px;
+  }
+}
+
+// FIXME: THIS PLACE SHOULD BE FIXED URGENT!!!
+.modalWrapper {
+  div, svg {
+    background: $color-neutral-neutral-2;
+    border-color: $color-neutral-neutral-4;
+    color: $color-neutral-neutral-9
+  }
+}
+
+// FIXME: THIS PLACE SHOULD BE FIXED URGENT!!!
+.simpleModal {
+  div, .simpleModalTitle {
+    font-family: $bai;
+    background: $color-neutral-neutral-2;
+    color: $color-neutral-neutral-9 !important;
+  }
+}
